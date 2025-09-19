@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiDevelo.co - AI SaaS Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 2rem;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .app-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        
+        .app-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .app-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .app-desc {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .status {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .apps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🚀</div>
+        <h1>AiDevelo.co</h1>
+        <p class="subtitle">AI SaaS Platform - Bereit für den Verkauf!</p>
+        
+        <div class="status">
+            ✅ <strong>Deployment erfolgreich!</strong> Alle Apps sind online und bereit für Kunden.
+        </div>
+        
+        <div class="apps">
+            <a href="https://app.aidevelo.co" class="app-card">
+                <div class="app-icon">💼</div>
+                <div class="app-title">B2B SaaS App</div>
+                <div class="app-desc">Hauptanwendung für kleine und mittlere Unternehmen</div>
+            </a>
+            
+            <a href="https://dashboard.aidevelo.co" class="app-card">
+                <div class="app-icon">🏢</div>
+                <div class="app-title">Enterprise Dashboard</div>
+                <div class="app-desc">Erweiterte Features für große Unternehmen</div>
+            </a>
+            
+            <a href="https://api.aidevelo.co" class="app-card">
+                <div class="app-icon">⚡</div>
+                <div class="app-title">API Server</div>
+                <div class="app-desc">REST API für Integrationen und Webhooks</div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p><strong>🎯 Sofortiger Verkauf möglich!</strong></p>
+            <p>Kunden können sich registrieren und bezahlen</p>
+            <p>Stripe-Integration aktiv • SSL-Zertifikate installiert</p>
+        </div>
+    </div>
+</body>
+</html>
