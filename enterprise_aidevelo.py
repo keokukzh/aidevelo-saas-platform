@@ -456,8 +456,8 @@ I understand your query: "{user_query}"
         fig = px.line(revenue_data, x='Date', y=['Revenue', 'Predicted'],
                      title='Revenue Prediction with 87% Accuracy',
                      color_discrete_sequence=['#667eea', '#28a745'])
-        fig.add_vline(x=dates[12].strftime('%Y-%m-%d'), line_dash="dash", line_color="red", 
-                     annotation_text="Prediction Start")
+        fig.add_vline(x=dates[12], line_dash="dash", line_color="red", 
+               annotation_text="Prediction Start")
         st.plotly_chart(fig, use_container_width=True)
         
         col1, col2, col3 = st.columns(3)
